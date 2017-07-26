@@ -1,0 +1,33 @@
+@mixin textNav {
+    color:gray !important;
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+body {
+   margin: 0;
+}
+.choicesMenu {
+    width:100%;
+    background: transparent !important;
+    border:none !important;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.navbar-header {
+    padding-left:10%;
+    .navbar-brand {
+    color:#FFAB0A !important;
+    }
+}
+.navbar-nav {
+    padding-right:10%;
+    li {
+        a {
+            @include textNav();
+        }
+    }
+}
